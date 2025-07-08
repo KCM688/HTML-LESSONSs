@@ -1,22 +1,48 @@
-<!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- Link external style sheets here if you have them -->
-    <link rel="stylesheet" href="">
-    <!-- Put css here if you don't have an external style sheet-->
-    <style>
-    </style>
-    <!-- For Javascript -->
-    <script src=""></script>
-  </head>
-  <body>
-    <div class="">
-      <h1>This is a Heading</h1>
-      <p>This is a paragraph.</p>
-      <p>This is another paragraph.</p>
-    </div>
-  </body>
-</html> 
+
+p {
+  color : cornflowerblue;
+  background-color : yellow;
+}
+th {
+  height : 100px;
+  width : 100px;
+  border : 4px;
+  border-style : solid;
+}
+    
+td {
+  height : 100px;
+  width : 100px;
+  border : 4px;
+  border-style : solid;
+}
+
+td:hover {
+  animation-name : hov;
+  animation-duration : 0.2s;
+  animation-fill-mode : forwards;
+  border-style : dashed;
+}
+
+th:hover {
+  animation-name : hov;
+  animation-duration : 0.2s;
+  animation-fill-mode : forwards;
+  border-style : dashed;
+}
+
+tr:hover {
+  animation-name : hov2;
+  animation-duration : 0.2s;
+  animation-fill-mode : forwards;
+}
+
+@keyframes hov {
+  from{background-color : rgba(255.0, 255.0, 255.0, 0.0);}
+  to{background-color : rgba(51, 122, 255.0, 1.0); !important}
+}
+	
+@keyframes hov2 {
+  from{background-color : rgba(1.0, 1.0, 1.0, 0.0);}
+  to{background-color : rgba(210, 170, 20, 1.0); !important}
+}
