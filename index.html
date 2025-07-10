@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -15,6 +16,15 @@ p {
   color : black;
   background-color : cyan;
 }
+
+#dogma:hover {
+	background : yellow;
+}
+
+.gre {
+	color : orange;
+}
+    
 th {
   height : 100px;
   width : 100px;
@@ -59,9 +69,18 @@ tr:hover {
   to{background-color : rgba(210, 170, 20, 1.0); !important}
 }
 Body{
-  background : green;
+  background : gray;
 }
-
+button {
+  height : 100px;
+  width : 100px;
+  border : 4px;
+  border-style : solid;
+  }
+button {
+  color: blue;
+  background-color: orange;
+}
     </style>
     <!-- For Javascript -->
     <script src=""></script>
@@ -70,8 +89,12 @@ Body{
     <div class="">
       <h1>This is a Heading</h1>
 <button type="button" onclick="alert('Hi')">Press Me!</button>
-      <p>This is a paragraph.</p>
+      <p id="dogma">This is a paragraph.</p>
+      <p class="gre"> gamble<p>
       <p>This is another paragraph.</p>
+      <h1 class="gre">
+      	spin
+        </h1>
       <table>
         <tr>
           <th>  </th>
