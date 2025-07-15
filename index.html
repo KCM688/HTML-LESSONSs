@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -9,7 +5,6 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!-- Link external style sheets here if you have them -->
-    <link rel="stylesheet" href="style.css">
     <!-- Put css here if you don't have an external style sheet-->
     <style>
     
@@ -89,24 +84,48 @@ button {
 }
     </style>
     <!-- For Javascript -->
-    <script src="">
-    function myFunction() {
-    alert();
-}
-    
+    <script>
+    	function ran() {
+        	var c = document.getElementById("t");
+            var e = c.children;
+            var d = [];
+            
+            
+            
+            for(const child of e) {
+            	console.log(child.childNodes);
+               	if (child.childNodes.childNodes.length > 1) {
+                	console.log("a");
+                	for(const d of child.childNodes) {
+                    
+                    }
+                }
+            }
+            
+            
+            
+            d = d[Math.round(Math.random() * (d.length - 1))];
+            
+            
+            //window.alert(d);
+            
+        	
+        };
+    	
+    	
   </script>
   </head>
   <body>
     <div class="">
       <h1>This is a Heading</h1>
-<button type="button" onclick="myFunction()">Press Me!</button>
+<button type="button" onclick="ran()">Press Me!</button>
       <p id="dogma">This is a paragraph.</p>
       <p class="gre"> abc<p>
       <p>This is another paragraph.</p>
       <h1 class="gre">
       	abc
         </h1>
-      <table>
+      <table id="t">
         <tr>
           <th>  </th>
           <th>  </th>
@@ -126,4 +145,3 @@ button {
     </div>
   </body>
 </html> 
-
