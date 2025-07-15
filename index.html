@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -88,26 +92,33 @@ button {
     	function ran() {
         	var c = document.getElementById("t");
             var e = c.children;
-            var d = [];
+            var dou = [];
             
             
             
             for(const child of e) {
-            	console.log(child.childNodes);
-               	if (child.childNodes.childNodes.length > 1) {
-                	console.log("a");
-                	for(const d of child.childNodes) {
-                    
+                for (const dw of child.childNodes) {
+                	var c = dw.childNodes;
+                    if (c.length > 1){
+                    	for (const po of c) {
+                        	if (po.nodeType != Node.TEXT_NODE) {
+                            	dou.push(po);
+                            
+                            }
+                            
+                        	
+                        }
+                        
                     }
                 }
             }
             
             
             
-            d = d[Math.round(Math.random() * (d.length - 1))];
+            dou = dou[Math.round(Math.random() * (dou.length - 1))];
             
+            dou.
             
-            //window.alert(d);
             
         	
         };
