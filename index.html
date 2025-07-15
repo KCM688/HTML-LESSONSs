@@ -87,43 +87,12 @@ button {
   display: inline-block;
 }
     </style>
-    <!-- For Javascript -->
     <script>
-    	function ran() {
-        	var c = document.getElementById("t");
-            var e = c.children;
-            var dou = [];
-            
-            
-            
-            for(const child of e) {
-                for (const dw of child.childNodes) {
-                	var c = dw.childNodes;
-                    if (c.length > 1){
-                    	for (const po of c) {
-                        	if (po.nodeType != Node.TEXT_NODE) {
-                            	dou.push(po);
-                            
-                            }
-                            
-                        	
-                        }
-                        
-                    }
-                }
-            }
-            
-            
-            
-            dou = dou[Math.round(Math.random() * (dou.length - 1))];
-            
-            dou.
-            
-            
-        	
-        };
-    	
-    	
+    function ran() {
+    	document.getElementById("a" + Math.round(Math.random() * 8)).style.backgroundColor = "blue";
+        }
+        
+  		
   </script>
   </head>
   <body>
@@ -138,19 +107,19 @@ button {
         </h1>
       <table id="t">
         <tr>
-          <th>  </th>
-          <th>  </th>
-          <th>  </th>
+          <th id="a0">  </th>
+          <th id="a1">  </th>
+          <th id="a2">  </th>
         </tr>
         <tr>
-          <td>  </td>
-          <td>  </td>
-          <td>  </td>
+          <td id="a3">  </td>
+          <td id="a4">  </td>
+          <td id="a5">  </td>
         </tr>
         <tr>
-          <td>  </td>
-          <td>  </td>
-          <td>  </td>
+          <td id="a6">  </td>
+          <td id="a7">  </td>
+          <td id="a8">  </td>
         </tr>
       </table>
     </div>
