@@ -3,6 +3,7 @@
 
 
 
+
 <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -92,9 +93,23 @@ button {
 }
     </style>
     <script>
-    function ran() {
-    	document.getElementById("a" + Math.round(Math.random() * 15)).style.backgroundColor = "blue";
+  	function ran() {
+    	var col = Math.round(Math.random());
+        var c = document.getElementById("a" + Math.round(Math.random() * 15));
+        if ((c.style.backgroundColor != "blue") && (c.style.backgroundColor != "red")) {
+    		if(col == 1) {
+    			c.style.backgroundColor = "blue";
+        	} else {
+        		c.style.backgroundColor = "red";
+        	}
         }
+    }
+  
+  
+  
+  
+  
+  
         
   		
   </script>
