@@ -6,6 +6,7 @@
 
 
 
+
 <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -142,8 +143,16 @@ function reset() {
 
 } 
   
-  
-        
+function compare() {
+    var red = 0
+    var blue = 0
+    var d = document.getElementById("a0");
+    if (d.style.backgroundColor = "blue") {
+    	
+        blue = blue + 1;
+        console.log(String(blue));
+	}
+}        
   		
   </script>
   </head>
@@ -151,10 +160,11 @@ function reset() {
     <div class="">
       <h1>This is a Heading</h1>
 <button type="button" onclick="ran()">Press Me!</button>
-<button type="button" onclick="reset()">Press Me!</button>
+<button type="button" onclick="reset()">Reset Me!</button>
+<button type="button" onclick="compare()">Compare Me!</button>
       <p id="dogma">This is a paragraph.</p>
       <p class="gre"> abc<p>
-      <p>This is another paragraph.</p>
+      <p id="B">.</p>
       <h1 class="gre">
       	abc
         </h1>
