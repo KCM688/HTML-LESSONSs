@@ -243,23 +243,29 @@ function compare() {
         console.log(String(blue));
     var d = document.getElementById("a15");
    if (d.style.backgroundColor == "red") red = red + 1;
-        console.log(String(red));     
+        console.log(String(red)); 
+        
+        if (blue >= red)document.getElementById("world").innerHTML = "<h2>You win</h2>";
+        if (blue < red)document.getElementById("world").innerHTML = "<h2>You lose</h2>";
 }        
   		
   </script>
   </head>
   <body>
     <div class="">
-      <h1>This is a Heading</h1>
+      <h1>Blue is a Winner</h1>
+      <p> Press this button to start the game</p>
 <button type="button" onclick="ran()">Press Me!</button>
-<button type="button" onclick="reset()">Reset Me!</button>
+<p>Use this to compare the two colors </p>
+<p> If there is more blue you're a winner</p>
 <button type="button" onclick="compare()">Compare Me!</button>
-      <p id="dogma">This is a paragraph.</p>
-      <p class="gre"> abc<p>
-      <p id="B">.</p>
-      <h1 class="gre">
-      	abc
-        </h1>
+<p> Restart and try again with this click</p>
+<button type="button" onclick="reset()">Reset Me!</button>
+
+
+
+      <p id="dogma">More blue makes you a Winner</p>
+        <p id=world></p>
       <table id="t">
         <tr>
           <th id="a0">  </th>
