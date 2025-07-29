@@ -7,6 +7,7 @@
 
 
 
+
 <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -147,11 +148,23 @@ function compare() {
     var red = 0
     var blue = 0
     var d = document.getElementById("a0");
-    if (d.style.backgroundColor = "blue") {
-    	
-        blue = blue + 1;
+   if (d.style.backgroundColor == "blue") blue = blue + 1;
         console.log(String(blue));
-	}
+     var red = 0
+    var blue = 0
+    var d = document.getElementById("a0");
+   if (d.style.backgroundColor == "red") red = red + 1;
+        console.log(String(red)); 
+	var red = 0
+    var blue = 0
+    var d = document.getElementById("a1");
+   if (d.style.backgroundColor == "blue") blue = blue + 1;
+        console.log(String(blue));
+        var red = 0
+        var blue = 0
+    var d = document.getElementById("a1");
+   if (d.style.backgroundColor == "red") red = red + 1;
+        console.log(String(red)); 
 }        
   		
   </script>
