@@ -1,14 +1,5 @@
 
 
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -245,8 +236,20 @@ function compare() {
    if (d.style.backgroundColor == "red") red = red + 1;
         console.log(String(red)); 
         
-        if (blue >= red)document.getElementById("world").innerHTML = "<h2>You win</h2>";
-        if (blue < red)document.getElementById("world").innerHTML = "<h2>You lose</h2>";
+	var x = document.getElementById("num").value;
+         document.getElementById("demo").innerHTML = x;
+         var b = 10;
+    if (blue > red) {
+        document.getElementById("world").innerHTML = "<p>You win</p>";
+         var bb = (x * 2);
+  var b = (bb + b);
+ document.getElementById("money").innerHTML = b;
+}
+   else {
+document.getElementById("world").innerHTML="<p>You Lose</p>";
+  var b = (b - x);
+document.getElementById("money").innerHTML = b;
+    }
 }        
   		
   </script>
@@ -254,7 +257,10 @@ function compare() {
   <body>
     <div class="">
       <h1>Blue is a Winner</h1>
-      <p> Press this button to start the game</p>
+      <p id="money"></p>
+<input type="number" id="num" min="0">
+<p id=demo></p>
+<p> Press this button to start the game</p>
 <button type="button" onclick="ran()">Press Me!</button>
 <p>Use this to compare the two colors </p>
 <p> If there is more blue you're a winner</p>
